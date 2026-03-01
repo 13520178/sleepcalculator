@@ -1,13 +1,179 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-    </head>
-    <body>
-    <strong>Privacy Policy</strong><p>This privacy policy applies to the Sleep Calculator app (hereby referred to as "Application") for mobile devices that was created by Phan Dang (hereby referred to as "Service Provider") as a Freemium service. This service is intended for use "AS IS".</p><br><strong>Information Collection and Use</strong><p>The Application collects information when you download and use it. This information may include information such as</p><ul><li>Your device's Internet Protocol address (e.g. IP address)</li><li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li><li>The time spent on the Application</li><li>The operating system you use on your mobile device</li></ul><p></p><br><p style="">The Application does not gather precise information about the location of your mobile device.</p><div style="display: none;"><p>The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:</p><ul><li>Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.</li><li>Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.</li><li>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.</li></ul></div><br><p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p><br><p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to Phan Dang. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p><br><strong>Third Party Access</strong><p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p><div><br><p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p><ul><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a></li><!----><!----></ul></div><br><p>The Service Provider may disclose User Provided and Automatically Collected Information:</p><ul><li>as required by law, such as to comply with a subpoena, or similar legal process;</li><li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li><li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li></ul><p></p><br><strong>Opt-Out Rights</strong><p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p><br><strong>Data Retention Policy</strong><p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at phannhatd@gmail.com and they will respond in a reasonable time.</p><br><strong>Children</strong><p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p><div><br><p>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (phannhatd@gmail.com) so that they will be able to take the necessary actions.</p></div><!----><br><strong>Security</strong><p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p><br><strong>Changes</strong><p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p><br><p>This privacy policy is effective as of 2024-05-24</p><br><strong>Your Consent</strong><p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p><br><strong>Contact Us</strong><p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at phannhatd@gmail.com.</p><hr>
-    </body>
-    </html>
-      
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <title>Privacy Policy</title>
+  <style>
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; line-height: 1.6; }
+    h2 { margin-top: 1.5em; }
+    .lang-buttons { margin-bottom: 20px; }
+    .lang-buttons button {
+      padding: 8px 14px;
+      margin-right: 8px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .lang-buttons button.active {
+      background: #000;
+      color: #fff;
+      border-color: #000;
+    }
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="lang-buttons">
+  <button id="btn-en" class="active" onclick="showLang('en')">English</button>
+  <button id="btn-vi" onclick="showLang('vi')">Tiếng Việt</button>
+</div>
+
+<!-- ===================== ENGLISH VERSION ===================== -->
+
+<div id="en" class="lang-content active">
+
+<h1>Privacy Policy</h1>
+
+<p>This Privacy Policy applies to the Sleep Calculator app (hereafter referred to as the "Application") developed by Phan Nhat Dang (the "Service Provider") as a freemium mobile tool. The Application is provided as-is.</p>
+
+<h2>Information Collection and Use</h2>
+
+<p>The Application functions primarily as a sleep cycle calculation tool. Most inputs (such as selected sleep time or wake-up time) are processed locally on your device.</p>
+
+<p><strong>No personally identifiable information</strong> (such as name, email address, phone number, or physical address) is collected or required to use the Application.</p>
+
+<p>The Application may collect limited <strong>anonymous technical data</strong> such as:</p>
+
+<ul>
+  <li>Device type and operating system version</li>
+  <li>Crash reports and performance logs</li>
+  <li>General usage statistics (e.g., screen views, session duration)</li>
+</ul>
+
+<p>This information is used solely to improve app stability and user experience.</p>
+
+<h2>Third-Party Services</h2>
+
+<p>The Application may use trusted third-party services for analytics or subscription management, including:</p>
+
+<ul>
+  <li><strong>Firebase</strong> – anonymous analytics and crash reporting</li>
+  <li><strong>RevenueCat</strong> – in-app purchase and subscription management (if applicable)</li>
+</ul>
+
+<p>These services may collect limited non-identifiable technical data in accordance with their own privacy policies.</p>
+
+<h2>Use of Artificial Intelligence in Content Creation</h2>
+
+<p>Some illustrative images and language refinements in this Application may be generated or assisted by artificial intelligence technologies during the content creation process.</p>
+
+<p>AI tools are used solely to support content production and translation. They do not provide medical diagnoses, treatment recommendations, or personalized health advice.</p>
+
+<p>All informational content is reviewed and edited for clarity and general accuracy.</p>
+
+<p>Translations may be assisted by AI-based language tools and are reviewed before publication.</p>
+
+<h2>Disclaimer</h2>
+
+<p>The Application provides general sleep timing calculations based on common sleep cycle assumptions. It is intended for informational and lifestyle purposes only.</p>
+
+<p>The Application does not provide medical advice, diagnosis, or treatment. If you have ongoing sleep problems, insomnia, medical conditions, or health concerns, please consult a qualified healthcare professional.</p>
+
+<p>The Service Provider is not responsible for decisions or actions taken based on the results generated by the Application. Use of the Application is at your own discretion.</p>
+
+<h2>Security</h2>
+
+<p>We take reasonable measures to protect the integrity of the Application. However, no digital system can guarantee absolute security. Since most data remains on your device, you are responsible for protecting access to your device.</p>
+
+<h2>Changes to This Policy</h2>
+
+<p>This Privacy Policy may be updated periodically. Updated versions will be posted on this page with a revised effective date.</p>
+
+<p><strong>Effective Date:</strong> 2026-03-01</p>
+<p><strong>Contact:</strong> phannhatd@gmail.com</p>
+
+</div>
+
+<!-- ===================== VIETNAMESE VERSION ===================== -->
+
+<div id="vi" class="lang-content">
+
+<h1>Chính sách quyền riêng tư</h1>
+
+<p>Chính sách quyền riêng tư này áp dụng cho ứng dụng Sleep Calculator (sau đây gọi là "Ứng dụng") được phát triển bởi Phan Nhat Dang ("Nhà cung cấp dịch vụ") dưới hình thức công cụ freemium trên thiết bị di động. Ứng dụng được cung cấp theo hiện trạng.</p>
+
+<h2>Thu thập và sử dụng thông tin</h2>
+
+<p>Ứng dụng hoạt động chủ yếu như một công cụ tính chu kỳ giấc ngủ. Các dữ liệu bạn nhập (ví dụ: giờ đi ngủ hoặc giờ thức dậy) được xử lý trực tiếp trên thiết bị của bạn.</p>
+
+<p><strong>Ứng dụng không thu thập thông tin nhận dạng cá nhân</strong> (như tên, email, số điện thoại hoặc địa chỉ).</p>
+
+<p>Ứng dụng có thể thu thập một số dữ liệu kỹ thuật ẩn danh như:</p>
+
+<ul>
+  <li>Loại thiết bị và phiên bản hệ điều hành</li>
+  <li>Báo cáo lỗi và dữ liệu hiệu suất</li>
+  <li>Thống kê sử dụng chung (ví dụ: màn hình đã xem, thời lượng phiên)</li>
+</ul>
+
+<p>Dữ liệu này chỉ nhằm mục đích cải thiện độ ổn định và trải nghiệm người dùng.</p>
+
+<h2>Dịch vụ bên thứ ba</h2>
+
+<p>Ứng dụng có thể sử dụng các dịch vụ bên thứ ba đáng tin cậy để phân tích và quản lý đăng ký (nếu có):</p>
+
+<ul>
+  <li><strong>Firebase</strong> – phân tích ẩn danh và báo cáo lỗi</li>
+  <li><strong>RevenueCat</strong> – quản lý mua hàng trong ứng dụng và đăng ký</li>
+</ul>
+
+<p>Các dịch vụ này có thể thu thập dữ liệu kỹ thuật không định danh theo chính sách riêng của họ.</p>
+
+<h2>Sử dụng Trí tuệ Nhân tạo trong quá trình tạo nội dung</h2>
+
+<p>Một số hình ảnh minh họa và nội dung diễn đạt trong Ứng dụng có thể được tạo ra hoặc hỗ trợ bởi công nghệ trí tuệ nhân tạo trong quá trình xây dựng nội dung.</p>
+
+<p>Các công cụ AI chỉ được sử dụng để hỗ trợ thiết kế hình ảnh và dịch thuật. AI không cung cấp chẩn đoán y tế hoặc tư vấn sức khỏe cá nhân hóa.</p>
+
+<p>Nội dung thông tin được rà soát và chỉnh sửa nhằm đảm bảo tính rõ ràng và phù hợp.</p>
+
+<p>Bản dịch có thể được hỗ trợ bởi công cụ AI và được kiểm tra lại trước khi phát hành.</p>
+
+<h2>Tuyên bố miễn trừ</h2>
+
+<p>Ứng dụng cung cấp các phép tính thời điểm ngủ và thức dậy dựa trên giả định chu kỳ giấc ngủ phổ biến. Nội dung chỉ mang tính tham khảo và hỗ trợ lối sống.</p>
+
+<p>Ứng dụng không thay thế tư vấn, chẩn đoán hoặc điều trị y tế. Nếu bạn gặp vấn đề về giấc ngủ hoặc tình trạng sức khỏe liên quan, hãy tham khảo ý kiến chuyên gia y tế.</p>
+
+<p>Nhà cung cấp dịch vụ không chịu trách nhiệm đối với bất kỳ quyết định nào dựa trên kết quả do Ứng dụng cung cấp. Việc sử dụng Ứng dụng hoàn toàn do bạn tự chịu trách nhiệm.</p>
+
+<h2>Bảo mật</h2>
+
+<p>Chúng tôi áp dụng các biện pháp hợp lý để bảo vệ tính toàn vẹn của Ứng dụng. Tuy nhiên, không hệ thống kỹ thuật số nào đảm bảo an toàn tuyệt đối. Bạn có trách nhiệm bảo vệ thiết bị của mình.</p>
+
+<h2>Thay đổi chính sách</h2>
+
+<p>Chính sách này có thể được cập nhật theo thời gian. Phiên bản mới sẽ được đăng trên trang này kèm ngày hiệu lực cập nhật.</p>
+
+<p><strong>Ngày hiệu lực:</strong> 2026-03-01</p>
+<p><strong>Liên hệ:</strong> phannhatd@gmail.com</p>
+
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById('en').classList.remove('active');
+  document.getElementById('vi').classList.remove('active');
+  document.getElementById('btn-en').classList.remove('active');
+  document.getElementById('btn-vi').classList.remove('active');
+  document.getElementById(lang).classList.add('active');
+  document.getElementById('btn-' + lang).classList.add('active');
+}
+</script>
+
+</body>
+</html>
